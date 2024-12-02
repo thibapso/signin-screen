@@ -27,14 +27,14 @@ import {
 
 export function SignIn() {
   return (
-    <main className="h-screen flex w-full">
-      <div className="bg-primary-foreground w-full h-full flex items-center justify-center p-16">
+    <main className="h-screen flex flex-col lg:flex-row w-full">
+      <div className="bg-primary-foreground w-full h-full flex items-center justify-center p-4 lg:p-16">
         {/* Carrossel com imagens */}
         <Carousel className="w-full max-w-xl">
           <CarouselPrevious />
           <CarouselContent>
             <CarouselItem>
-              <div className="flex aspect-square rounded p-8">
+              <div className="flex aspect-square rounded p-4 lg:p-8">
                 <img
                   src={plantsImg}
                   alt="Imagem de Plantas"
@@ -43,7 +43,7 @@ export function SignIn() {
               </div>
             </CarouselItem>
             <CarouselItem>
-              <div className="flex aspect-square rounded p-8">
+              <div className="flex aspect-square rounded p-4 lg:p-8">
                 <img
                   src={cactusImg}
                   alt="Imagem de Cactos"
@@ -56,7 +56,7 @@ export function SignIn() {
         </Carousel>
       </div>
 
-      <section className="flex items-center justify-center bg-background h-full max-w-3xl w-full p-4">
+      <section className="flex items-center justify-center bg-background h-full w-full p-4 lg:p-8">
         <Card className="w-full max-w-md">
           <CardHeader>
             <CardTitle className="text-2xl font-bold tracking-tighter">
